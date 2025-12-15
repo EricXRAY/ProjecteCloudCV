@@ -12,12 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 async function updateVisitCount() {
     const counterElement = document.getElementById('counter');
 
-    // Safety check for placeholder
-    if (API_ENDPOINT.includes("https://rbe9uhma0f.execute-api.us-east-1.amazonaws.com")) {
-        console.warn("API Endpoint not set.");
-        counterElement.innerText = "Set API URL";
-        return;
-    }
+    // Safety check removed to avoid logic errors
+    // if (API_ENDPOINT.includes("YOUR_API_GATEWAY_URL")) { ... }
 
     try {
         // The backend expects a POST request to increment/get the count
@@ -47,3 +43,4 @@ async function updateVisitCount() {
         counterElement.innerText = "Error";
     }
 }
+
