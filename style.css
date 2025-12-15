@@ -228,6 +228,51 @@ footer {
     }
 }
 
+/* Custom Lists */
+.education-list {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+.file-list {
+    list-style: none;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.file-list li a {
+    display: block;
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--text-color);
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.file-list li a:hover {
+    border-color: var(--accent-color);
+    background-color: #38bdf81a;
+    color: var(--accent-color);
+}
+
+.subsection-title {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+.certifications-container {
+    margin-top: 40px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     h1 {
